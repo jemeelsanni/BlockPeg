@@ -36,7 +36,7 @@ const About = () => {
             </div>
             <div className="flex items-center space-x-2 text-lg mb-4 text-[#999999]">
               <IoCheckmarkCircleSharp className=" fill-[#16D5FF]" size={24} />
-              <span>Tempor erat elitr rebum at clita</span>
+              <span>Tempaor erat elitr rebum at clita</span>
             </div>
             <div className="flex items-center space-x-2 text-lg mb-4 text-[#999999]">
               <IoCheckmarkCircleSharp className=" fill-[#16D5FF]" size={24} />
