@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../layout/Navbar";
 import Hero from "./Hero";
+import Blog from "./Blog/Blog";
 import About from "./About/About";
 import Facts from "./Facts";
 import Features from "./Features";
@@ -13,11 +14,12 @@ const Index = () => {
     <div>
       <Navbar />
       <Hero id="home" />
-      <About id="about" />
+      <Blog />
+      {/* <About id="about" />
       <Facts />
       <Features />
       <Services />
-      <FAQs />
+      <FAQs /> */}
       <Footer />
     </div>
   );

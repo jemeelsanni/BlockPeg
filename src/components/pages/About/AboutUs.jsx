@@ -9,6 +9,7 @@ const AboutUs = () => {
     <div>
       <Navbar />
       <div>
+        
         <About />
         <Team />
       </div>

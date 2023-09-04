@@ -1,29 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Herimg from "../assets/hero-1.png";
 
 const Hero = () => {
   return (
     <div
-      className="flex justify-between items-center bg-[#F2F8FE] px-8"
+      className="flex h-[80vh] items-center bg-[#F2F8FE] px-8 shadow-xl"
       id="home"
     >
-      <div className="w-1/2 p-16">
-        <h1 className="text-6xl font-bold capitalize">
-          Make a better life with trusted blockpeg
+      <div className="w-full px-16 text-center">
+        <h1 className="text-8xl font-bold capitalize title text-[#0c3c4c]">
+          Make a better life with blockpeg
         </h1>
-        <p className="text-xl capitalize mt-4">
+        <p className="text-3xl font-light capitalize mt-4 title">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-
-        <button className="bg-[#16D5FF] hover:bg-white hover:text-[#16D5FF] text-white text-lg font-medium py-2 px-4 mt-4">
-          Explore More
-        </button>
-      </div>
-      <div className="w-1/2">
-        <img className="object-cover p-24" src={Herimg} alt="Hero" />
+        <Link to="/contact">
+          <button className="bg-transparent hover:bg-[#0c3c4c] hover:text-white text-[#0c3c4c] border-[#0c3c4c] border-2 text-2xl body text-lg font-medium py-2 px-4 mt-4">
+            Let's Talk
+          </button>
+        </Link>
       </div>
     </div>
   );
