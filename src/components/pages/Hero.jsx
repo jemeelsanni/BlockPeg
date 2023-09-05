@@ -4,7 +4,7 @@ import Herimg from "../assets/hero-1.png";
 
 const Hero = () => {
   return (
-    <div className="relative">
+    <div className="">
       {/* desktop */}
       <div className=" hidden sm:hidden lg:block xl:block">
         <div
