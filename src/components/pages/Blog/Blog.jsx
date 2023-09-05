@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "../../layout/Navbar";
-import Footer from "../../layout/Footer";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Blog = () => {
   return (
@@ -91,6 +90,9 @@ const Blog = () => {
                     type="text"
                     placeholder="jemeelsanni@gmail.com"
                   />
+                  <button className="absolute top-0 end-0 py-2 px-4 fill-[#0c3c4c] ">
+                    <IoIosArrowForward size={24} />
+                  </button>
                 </div>
               </div>
               <div className="bg-slate-200 px-8 py-10">
@@ -122,7 +124,7 @@ const Blog = () => {
         </section>
       </div>
       {/* Mobile */}
-      <div className=" sm:block lg:hidden xl:hidden">
+      <div className=" sm:block lg:hidden xl:hidden ">
         <section className="mx-4 mt-8">
           <div className="flex flex-col-reverse gap-14">
             <div className=" w-full">
@@ -190,7 +192,7 @@ const Blog = () => {
                 </div>
               </div>
             </div>
-            <div className="  w-full">
+            {/* <div className="  w-full">
               <div className="bg-slate-200 px-8 py-4">
                 <div className="">
                   <h5 className="text-xl font-bold text-[#0c3c4c] head mb-3">
@@ -201,15 +203,18 @@ const Blog = () => {
                     directly to your inbox.
                   </p>
                 </div>
-                <div className="">
+                <div className="relative">
                   <input
-                    className=" bg-[#f2f8fe] body w-full p-2 placeholder-neutral-400 focus:outline-none"
+                    className=" bg-[#f2f8fe] body  w-full p-2 placeholder-neutral-400 focus:outline-none"
                     type="text"
                     placeholder="jemeelsanni@gmail.com"
                   />
+                  <button className="absolute top-0 end-0 py-2 px-4 fill-[#0c3c4c] ">
+                    <IoIosArrowForward size={24} />
+                  </button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>

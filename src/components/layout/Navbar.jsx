@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/blockpeg.png";
 import { Link } from "react-router-dom";
-import { IoMdClose } from "react-icons/io";
+import { IoMdClose, IoIosArrowForward } from "react-icons/io";
 import { FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
@@ -159,6 +159,9 @@ const Navbar = () => {
                     type="text"
                     placeholder="jemeelsanni@gmail.com"
                   />
+                  <button className="absolute top-116 end-4 py-2 px-4 text-[#0c3c4c]   ">
+                    <IoIosArrowForward size={24} />
+                  </button>
                 </div>
               </div>
             </div>
