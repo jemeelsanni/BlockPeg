@@ -96,15 +96,15 @@ const Navbar = () => {
               </Link>
             </ScrollLink>
           </li> */}
-              <li className="hover:text-[#0c3c4c] hover:border-b-2 hover:border-[#0c3c4c]">
+              <li className="text-slate-200">
                 {/* <ScrollLink to="about" smooth={true} duration={500}> */}
                 <Link to="/about">Team</Link>
                 {/* </ScrollLink> */}
               </li>
-              <li className="hover:text-[#0c3c4c] hover:border-b-2 hover:border-[#0c3c4c]">
+              <li className="text-slate-200">
                 <Link to="/blogx">Blog</Link>
               </li>
-              <li className="hover:text-[#0c3c4c] hover:border-b-2 hover:border-[#0c3c4c] mb-4">
+              <li className="text-slate-200 mb-4">
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>

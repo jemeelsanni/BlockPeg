@@ -184,7 +184,7 @@ const Contact = ({}) => {
       <div className="sm:block lg:hidden xl:hidden">
         <section className="mx-6 my-4">
           <div className="flex flex-col gap-10">
-            <div className="pb-6 shadow-xl text-[#0c3c4c] px-6 relative w-full">
+            <div className="pb-6 shadow-xl text-[#0c3c4c] px-6  w-full">
               <div className="mb-6">
                 <h1 className=" mb-4 heading">Contact</h1>
                 <span className="text-lg font-medium text-black  body">
