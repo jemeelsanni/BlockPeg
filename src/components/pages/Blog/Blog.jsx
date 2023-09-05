@@ -201,7 +201,7 @@ const Blog = () => {
                     directly to your inbox.
                   </p>
                 </div>
-                <div className="relative">
+                <div className="">
                   <input
                     className=" bg-[#f2f8fe] body w-full p-2 placeholder-neutral-400 focus:outline-none"
                     type="text"
