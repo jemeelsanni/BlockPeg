@@ -80,7 +80,7 @@ const Navbar = () => {
       {/* Mobile */}
       {open && (
         <>
-          <div className="fixed top-0 left-0 w-full h-full bg-[#0c3c4c] text-slate-200">
+          <div className="fixed top-0 left-0 z-[9999] w-full h-full bg-[#0c3c4c] text-slate-200">
             <div className="border-b-2 border-gray-300 p-4 mx-4 mb-4">
               <div onClick={() => setOpen(false)}>
                 <button>
