@@ -41,9 +41,9 @@ const Footer = () => {
                   <div className="mb-2 text-[#999999] hover:text-lg">
                   <Link to="/contact">Contact</Link>
                   </div>
-                  <div className="mb-2 text-[#999999] hover:text-lg">
+                  {/* <div className="mb-2 text-[#999999] hover:text-lg">
                   <Link to="/about">Team</Link>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="body">
                   <h5 className="font-semibold text-2xl heading mb-4 capitalize">
@@ -98,9 +98,9 @@ const Footer = () => {
                   <div className="mb-2 text-[#999999] hover:text-lg">
                   <Link to="/contact">Contact</Link>
                   </div>
-                  <div className="mb-2 text-[#999999] hover:text-lg">
+                  {/* <div className="mb-2 text-[#999999] hover:text-lg">
                   <Link to="/about">Team</Link>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="body">
                   <h5 className="font-semibold text-xl heading mb-2 capitalize">

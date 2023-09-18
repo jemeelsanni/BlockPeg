@@ -28,11 +28,9 @@ const Navbar = () => {
               </Link>
             </ScrollLink>
           </li> */}
-              <li className="hover:text-[#0c3c4c] hover:border-b-2 hover:border-[#0c3c4c]">
-                {/* <ScrollLink to="about" smooth={true} duration={500}> */}
+              {/* <li className="hover:text-[#0c3c4c] hover:border-b-2 hover:border-[#0c3c4c]">
                 <Link to="/about">Team</Link>
-                {/* </ScrollLink> */}
-              </li>
+              </li> */}
               <li className="hover:text-[#0c3c4c] hover:border-b-2 hover:border-[#0c3c4c]">
                 <Link to="/blogx">Blog</Link>
               </li>
@@ -96,11 +94,11 @@ const Navbar = () => {
               </Link>
             </ScrollLink>
           </li> */}
-              <li className="text-slate-200">
-                {/* <ScrollLink to="about" smooth={true} duration={500}> */}
+              {/* <li className="text-slate-200">
+                
                 <Link to="/about">Team</Link>
-                {/* </ScrollLink> */}
-              </li>
+                
+              </li> */}
               <li className="text-slate-200">
                 <Link to="/blogx">Blog</Link>
               </li>
