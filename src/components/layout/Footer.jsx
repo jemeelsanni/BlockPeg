@@ -19,7 +19,7 @@ const Footer = () => {
     <div>
       {/* Desktop */}
       <div className="bg-[#0c3c4c] px-24 py-8 mt-16 text-[#999999] hidden sm:hidden lg:block xl:block">
-        <div className="mx-auto flex flex-col gap-4 ">
+        <div className="mx-auto flex flex-col gap-4 pt-12 ">
           <div className="border-b-2 border-gray-300 pb-4 mb-4">
             <div className="grid grid-cols-2 gap-16 items-center mb-6 ">
               <div>
@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
       {/* Mobile */}
       <div className="bg-[#0c3c4c] px-8 pb-7 mt-8 text-[#999999] sm:block lg:hidden xl:hidden">
-        <div className="mx-auto flex flex-col gap-1  ">
+        <div className="mx-auto flex flex-col gap-1 pt-12  ">
           <div className="border-b-2 border-gray-300 pb-4 mb-4">
             <div className="grid grid-cols-1 gap-8 items-center mb-6 ">
               <div>

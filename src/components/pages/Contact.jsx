@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import emailjs from "@emailjs/browser";
@@ -11,7 +11,6 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
-
 import Radio from "@mui/material/Radio";
 import Checkbox from "@mui/material/Checkbox";
 import Button from "@mui/material/Button";
@@ -19,10 +18,11 @@ import Button from "@mui/material/Button";
 const Contact = () => {
   const form = useRef();
 
-  const [choice, setChoice] = useState(""); // To store the selected choice ('Yes' or 'No')
-  const [yesOptions, setYesOptions] = useState(Array(6).fill(false)); // To store the selected checkboxes for 'Yes'
-  const [noOptions, setNoOptions] = useState(Array(6).fill(false)); // To store the selected checkboxes for 'No'
-  const [selectedDropdownValue, setSelectedDropdownValue] = useState("Option 1");
+  const [choice, setChoice] = useState(""); 
+  const [yesOptions, setYesOptions] = useState(Array(6).fill(false)); 
+  const [noOptions, setNoOptions] = useState(Array(6).fill(false)); 
+  const [selectedDropdownValue, setSelectedDropdownValue] =
+    useState("Option 1");
 
   const handleChoiceChange = (event) => {
     setChoice(event.target.value);
@@ -43,7 +43,6 @@ const Contact = () => {
     setSelectedDropdownValue(event.target.value);
   };
 
-
   const [loading, setLoading] = useState(false);
   const [phone_number, setPhone_number] = useState("");
 
@@ -52,13 +51,17 @@ const Contact = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        // Your emailjs service ID
-        "YOUR_SERVICE_ID",
-        // Your emailjs template ID
-        "YOUR_TEMPLATE_ID",
-        form.current,
-        // Your emailjs user ID
-        "YOUR_USER_ID"
+        "service_lw0920c", // Your emailjs service ID
+        "template_wds5rdb", // Your emailjs template ID
+        {
+          user_name: e.target.user_name.value,
+          email: e.target.email.value,
+          phone_number: phone_number,
+          choice: choice,
+          selectedDropdownValue: selectedDropdownValue,
+          // Include other form fields here
+        },
+        "XUMoM5FgMGTUctBMI" // Your emailjs user ID
       )
       .then(
         (result) => {
@@ -73,6 +76,10 @@ const Contact = () => {
         }
       );
   };
+
+  useEffect(() => {
+    emailjs.init("XUMoM5FgMGTUctBMI");
+  }, []);
 
   return (
     <div>
@@ -281,7 +288,7 @@ const Contact = () => {
               <MenuItem value="Option4">€ 250,000+</MenuItem>
             </Select>
           </section>
-          
+
           <Button
             type="submit"
             variant="outlined"
