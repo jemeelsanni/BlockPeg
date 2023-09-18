@@ -172,10 +172,10 @@ const Navbar = () => {
         <div className="flex justify-between mx-4 my-5 items-center bg-slate-200 head  p-2 rounded-full">
           <div>
             <Link to="/">
-              <img className="h-16 w-16" src={logo} alt="Logo" />
+              <img className="h-12 w-12" src={logo} alt="Logo" />
             </Link>
           </div>
-          <div className="text-4xl font-bold capitalize title text-[#0c3c4c]">
+          <div className="text-2xl font-bold capitalize title text-[#0c3c4c]">
             Blockpeg
           </div>
           <div className="flex gap-4 text-[#0c3c4c]">

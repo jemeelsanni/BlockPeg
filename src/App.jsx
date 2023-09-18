@@ -5,6 +5,9 @@ import Blogx from "./components/pages/Blog/Blogx";
 import AboutUs from "./components/pages/About/AboutUs";
 import Contact from "./components/pages/Contact";
 import { ToastContainer } from "react-toastify";
+import FirstBlog from "./components/pages/Blog/BlogPages/FirstBlog";
+import SecondBlog from "./components/pages/Blog/BlogPages/SecondBlog";
+import ThirdBlog from "./components/pages/Blog/BlogPages/ThirdBlog";
 
 function App() {
   return (
@@ -26,6 +29,10 @@ function App() {
           <Route path="blogx" element={<Blogx />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="cryptocurrency" element={<FirstBlog />} />
+          <Route path="cryptocurrency+trading" element={<SecondBlog />} />
+          <Route path="webgtr" element={<ThirdBlog />} />
+          
         </Routes>
       </Router>
     </>

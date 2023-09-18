@@ -14,6 +14,8 @@ const Index = () => {
     <div>
       <Navbar />
       <Hero id="home" />
+      
+
       <Blog />
       {/* <About id="about" />
       <Facts />

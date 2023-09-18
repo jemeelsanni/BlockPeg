@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -10,67 +11,80 @@ const Blog = () => {
           <div className="flex gap-14">
             <div className=" w-7/12">
               <div className=" p-12 hover:shadow-2xl">
-                <div>
-                  <p className=" text-lg font-bold text-[#0c3c4c] mb-1 head">
-                    Writing
-                  </p>
-                  <h5 className="text-4xl mb-2 heading">
-                    {" "}
-                    Lorem ipsum dolor sit amet
-                  </h5>
-                </div>
-                <div className="flex justify-between mb-2 body">
-                  <p>August 24 2023</p>
-                  <p>9 min read</p>
-                </div>
-                <div className="body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
+                <Link to="/cryptocurrency">
+                  <div>
+                    <p className=" text-lg font-bold text-[#0c3c4c] mb-1 head">
+                      Writing
+                    </p>
+                    <h5 className="text-4xl mb-2 heading">
+                      {" "}
+                      Bitcoin vs. Ethereum: Unmasking the Battle of Blockchain
+                      Consensus
+                    </h5>
+                  </div>
+                  <div className="flex justify-between mb-2 body">
+                    <p>September 16 2023</p>
+                    <p>3 min read</p>
+                  </div>
+                  <div className="body">
+                    In the ever-evolving landscape of cryptocurrencies, two
+                    giants stand tall: Bitcoin and Ethereum. Beyond the
+                    surface-level rivalry, a deeper clash of blockchain
+                    consensus mechanisms shapes their fundamental differences.
+                    Strap in as we dissect this clash and shed light on the
+                    inner workings of these blockchain behemoths.
+                  </div>
+                </Link>
               </div>
               <div className=" p-12 hover:shadow-2xl">
-                <div>
-                  <p className=" text-lg font-bold text-[#0c3c4c] mb-1 head">
-                    Writing
-                  </p>
-                  <h5 className="text-4xl mb-2 heading">
-                    {" "}
-                    Lorem ipsum dolor sit amet
-                  </h5>
-                </div>
-                <div className="flex justify-between mb-2 body">
-                  <p>August 24 2023</p>
-                  <p>9 min read</p>
-                </div>
-                <div className="body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
+                <Link to="/cryptocurrency+trading">
+                  <div>
+                    <p className=" text-lg font-bold text-[#0c3c4c] mb-1 head">
+                      Writing
+                    </p>
+                    <h5 className="text-4xl mb-2 heading">
+                      {" "}
+                      CRYPTOCURRENCY TRADING IS BAD FOR AMATEURS
+                    </h5>
+                  </div>
+                  <div className="flex justify-between mb-2 body">
+                    <p>September 15 2023</p>
+                    <p>4 min read</p>
+                  </div>
+                  <div className="body">
+                    Given the complexities and risks associated with
+                    cryptocurrency trading, it’s not a dvisable to venture into
+                    it as an amateur. Especially now that there are several
+                    avenues to learn, going into cryptocurrency trading without
+                    proper knowledge is wrong. However, you can sometimes get
+                    lucky and have your investment blow up into massive profits.
+                    It is still very likely that you will end up with losses.
+                  </div>
+                </Link>
               </div>
               <div className=" p-12 hover:shadow-2xl">
-                <div>
-                  <p className=" text-lg font-bold text-[#0c3c4c] mb-1 head">
-                    Writing
-                  </p>
-                  <h5 className="text-4xl mb-2 heading">
-                    {" "}
-                    Lorem ipsum dolor sit amet
-                  </h5>
-                </div>
-                <div className="flex justify-between mb-2 body">
-                  <p>August 24 2023</p>
-                  <p>9 min read</p>
-                </div>
-                <div className="body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
+                <Link to="/webgtr">
+                  <div>
+                    <p className=" text-lg font-bold text-[#0c3c4c] mb-1 head">
+                      Writing
+                    </p>
+                    <h5 className="text-4xl mb-2 heading">
+                      {" "}
+                      What is Token Lockup?
+                    </h5>
+                  </div>
+                  <div className="flex justify-between mb-2 body">
+                    <p>September 15 2023</p>
+                    <p>2 min read</p>
+                  </div>
+                  <div className="body">
+                    The term “token lockup” refers to a specific duration during
+                    which cryptocurrency tokens are restricted from being
+                    transacted or traded. Typically, these lockup periods serve
+                    as a strategic measure to ensure the enduring stability of a
+                    particular asset.
+                  </div>
+                </Link>
               </div>
             </div>
             <div className="  w-5/12">
@@ -88,7 +102,7 @@ const Blog = () => {
                   <input
                     className=" bg-[#f2f8fe] body w-full p-2 placeholder-neutral-400 focus:outline-none"
                     type="text"
-                    placeholder="jemeelsanni@gmail.com"
+                    placeholder="admin@blockpeg.capital"
                   />
                   <button className="absolute top-0 end-0 py-2 px-4 fill-[#0c3c4c] ">
                     <IoIosArrowForward size={24} />
@@ -103,19 +117,16 @@ const Blog = () => {
                 </div>
                 <div className="mt-2 body">
                   <div className=" mb-6 hover:text-lg font-medium hover:text-[#0c3c4c]">
-                    <a href="">Lorem ipsum dolor sit amet.</a>
+                    <a href="">
+                      Bitcoin vs. Ethereum: Unmasking the Battle of Blockchain
+                      Consensus
+                    </a>
                   </div>
                   <div className=" mb-6 hover:text-lg font-medium hover:text-[#0c3c4c]">
-                    <a href="">Lorem ipsum dolor sit amet.</a>
+                    <a href="">CRYPTOCURRENCY TRADING IS BAD FOR AMATEURS</a>
                   </div>
                   <div className=" mb-6 hover:text-lg font-medium hover:text-[#0c3c4c]">
-                    <a href="">Lorem ipsum dolor sit amet.</a>
-                  </div>
-                  <div className=" mb-6 hover:text-lg font-medium hover:text-[#0c3c4c]">
-                    <a href="">Lorem ipsum dolor sit amet.</a>
-                  </div>
-                  <div className=" mb-6 hover:text-lg font-medium hover:text-[#0c3c4c]">
-                    <a href="">Lorem ipsum dolor sit amet.</a>
+                    <a href="">What is Token Lockup?</a>
                   </div>
                 </div>
               </div>
@@ -129,67 +140,80 @@ const Blog = () => {
           <div className="flex flex-col-reverse gap-14">
             <div className=" w-full">
               <div className=" p-4 hover:shadow-2xl">
-                <div>
-                  <p className=" text-xl font-bold text-[#0c3c4c] mb-1 head">
-                    Writing
-                  </p>
-                  <h5 className="text-3xl mb-2 heading">
-                    {" "}
-                    Lorem ipsum dolor sit amet
-                  </h5>
-                </div>
-                <div className="flex justify-between mb-2 body">
-                  <p>August 24 2023</p>
-                  <p>9 min read</p>
-                </div>
-                <div className="body text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
+                <Link to="/cryptocurrency">
+                  <div>
+                    <p className=" text-xl font-bold text-[#0c3c4c] mb-1 head">
+                      Writing
+                    </p>
+                    <h5 className="text-3xl mb-2 heading">
+                      {" "}
+                      Bitcoin vs. Ethereum: Unmasking the Battle of Blockchain
+                      Consensus
+                    </h5>
+                  </div>
+                  <div className="flex justify-between mb-2 body">
+                    <p>September 16 2023</p>
+                    <p>3 min read</p>
+                  </div>
+                  <div className="body text-lg">
+                    In the ever-evolving landscape of cryptocurrencies, two
+                    giants stand tall: Bitcoin and Ethereum. Beyond the
+                    surface-level rivalry, a deeper clash of blockchain
+                    consensus mechanisms shapes their fundamental differences.
+                    Strap in as we dissect this clash and shed light on the
+                    inner workings of these blockchain behemoths.
+                  </div>
+                </Link>
               </div>
               <div className=" p-4 hover:shadow-2xl">
-                <div>
-                  <p className=" text-xl font-bold text-[#0c3c4c] mb-1 head">
-                    Writing
-                  </p>
-                  <h5 className="text-3xl mb-2 heading">
-                    {" "}
-                    Lorem ipsum dolor sit amet
-                  </h5>
-                </div>
-                <div className="flex justify-between mb-2 body">
-                  <p>August 24 2023</p>
-                  <p>9 min read</p>
-                </div>
-                <div className="body text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
+                <Link to="/cryptocurrency+trading">
+                  <div>
+                    <p className=" text-xl font-bold text-[#0c3c4c] mb-1 head">
+                      Writing
+                    </p>
+                    <h5 className="text-3xl mb-2 heading">
+                      {" "}
+                      CRYPTOCURRENCY TRADING IS BAD FOR AMATEURS
+                    </h5>
+                  </div>
+                  <div className="flex justify-between mb-2 body">
+                    <p>September 15 2023</p>
+                    <p>4 min read</p>
+                  </div>
+                  <div className="body text-lg">
+                    Given the complexities and risks associated with
+                    cryptocurrency trading, it’s not a dvisable to venture into
+                    it as an amateur. Especially now that there are several
+                    avenues to learn, going into cryptocurrency trading without
+                    proper knowledge is wrong. However, you can sometimes get
+                    lucky and have your investment blow up into massive profits.
+                    It is still very likely that you will end up with losses.
+                  </div>
+                </Link>
               </div>
               <div className=" p-4 hover:shadow-2xl">
-                <div>
-                  <p className=" text-xl font-bold text-[#0c3c4c] mb-1 head">
-                    Writing
-                  </p>
-                  <h5 className="text-3xl mb-2 heading">
-                    {" "}
-                    Lorem ipsum dolor sit amet
-                  </h5>
-                </div>
-                <div className="flex justify-between mb-2 body">
-                  <p>August 24 2023</p>
-                  <p>9 min read</p>
-                </div>
-                <div className="body text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
+                <Link to="/webgtr">
+                  <div>
+                    <p className=" text-xl font-bold text-[#0c3c4c] mb-1 head">
+                      Writing
+                    </p>
+                    <h5 className="text-3xl mb-2 heading">
+                      {" "}
+                      What is Token Lockup?
+                    </h5>
+                  </div>
+                  <div className="flex justify-between mb-2 body">
+                    <p>September 15 2023</p>
+                    <p>2 min read</p>
+                  </div>
+                  <div className="body text-lg">
+                    The term “token lockup” refers to a specific duration during
+                    which cryptocurrency tokens are restricted from being
+                    transacted or traded. Typically, these lockup periods serve
+                    as a strategic measure to ensure the enduring stability of a
+                    particular asset.
+                  </div>
+                </Link>
               </div>
             </div>
             {/* <div className="  w-full">

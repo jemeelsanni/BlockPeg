@@ -10,6 +10,9 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import Logo from "../assets/blockpeg.png";
+import { Link } from "react-router-dom";
+import AumTimer from "../timer/AumTimer";
+
 
 const Footer = () => {
   return (
@@ -24,10 +27,7 @@ const Footer = () => {
                   BlockPeg
                 </h1>
                 <span className="text-lg text-[#999999] body">
-                  Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-                  erat ipsum et lorem et sit, sed stet lorem sit clita. Diam
-                  dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
-                  ipsum et lorem et sit.
+                <AumTimer />
                 </span>
               </div>
               <div className="flex gap-16">
@@ -36,13 +36,13 @@ const Footer = () => {
                     Quick Links
                   </h5>
                   <div className="mb-2 text-[#999999] hover:text-lg">
-                    <a href="">Blog</a>
+                  <Link to="/blogx">Blog</Link>
                   </div>
                   <div className="mb-2 text-[#999999] hover:text-lg">
-                    <a href="">Contact</a>
+                  <Link to="/contact">Contact</Link>
                   </div>
                   <div className="mb-2 text-[#999999] hover:text-lg">
-                    <a href="">About</a>
+                  <Link to="/about">Team</Link>
                   </div>
                 </div>
                 <div className="body">
@@ -51,15 +51,15 @@ const Footer = () => {
                   </h5>
                   <p className="mb-4 text-[#999999]">
                     <FaMapMarkerAlt className="inline mr-2" />
-                    123 Street, New York, USA
+                    78/79 Pappelallee, 10437, Berlin, Germany
                   </p>
                   <p className="mb-4 text-[#999999]">
                     <FaPhone className="inline mr-2" />
-                    +012 345 67890
+                    +351912392362
                   </p>
                   <p className="mb-4 text-[#999999]">
                     <FaEnvelope className="inline mr-2" />
-                    info@example.com
+                    admin@blockpeg.capital
                   </p>
                 </div>
               </div>
@@ -84,10 +84,7 @@ const Footer = () => {
                   BlockPeg
                 </h1>
                 <span className="text-lg text-[#999999] body">
-                  Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-                  erat ipsum et lorem et sit, sed stet lorem sit clita. Diam
-                  dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
-                  ipsum et lorem et sit.
+                <AumTimer />
                 </span>
               </div>
               <div className="flex justify-around">
@@ -96,13 +93,13 @@ const Footer = () => {
                     Quick Links
                   </h5>
                   <div className="mb-2 text-[#999999] hover:text-lg">
-                    <a href="">Blog</a>
+                  <Link to="/blogx">Blog</Link>
                   </div>
                   <div className="mb-2 text-[#999999] hover:text-lg">
-                    <a href="">Contact</a>
+                  <Link to="/contact">Contact</Link>
                   </div>
                   <div className="mb-2 text-[#999999] hover:text-lg">
-                    <a href="">About</a>
+                  <Link to="/about">Team</Link>
                   </div>
                 </div>
                 <div className="body">
@@ -111,15 +108,15 @@ const Footer = () => {
                   </h5>
                   <p className="mb-4 text-[#999999]">
                     <FaMapMarkerAlt className="inline mr-2" />
-                    123 Street, New York, USA
+                    78/79 Pappelallee, 10437, Berlin, Germany
                   </p>
                   <p className="mb-4 text-[#999999]">
                     <FaPhone className="inline mr-2" />
-                    +012 345 67890
+                    +351912392362
                   </p>
                   <p className="mb-4 text-[#999999]">
                     <FaEnvelope className="inline mr-2" />
-                    info@example.com
+                    admin@blockpeg.capital
                   </p>
                 </div>
               </div>
