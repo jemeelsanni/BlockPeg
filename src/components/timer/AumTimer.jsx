@@ -12,6 +12,16 @@ const AumTimer = () => {
   const [ethValue, setEthValue] = useState(initialAUM / ethToUsdRate);
   const [bnbValue, setBnbValue] = useState(initialAUM / bnbToUsdRate);
 
+  // Load timer state from local storage, if available
+  useEffect(() => {
+    const savedState = JSON.parse(localStorage.getItem('timerState'));
+
+    if (savedState) {
+      setAum(savedState.aum);
+      setRemainingTime(savedState.remainingTime);
+    }
+  }, []);
+
   useEffect(() => {
     const timer = setInterval(() => {
       // Calculate the remaining time
@@ -26,6 +36,9 @@ const AumTimer = () => {
         setRemainingTime(conversionUpdateInterval);
       }
     }, 1000); // Update every 1 second
+
+    // Save timer state to local storage
+    localStorage.setItem('timerState', JSON.stringify({ aum, remainingTime }));
 
     // Clean up the timer when the component unmounts
     return () => clearInterval(timer);
@@ -58,6 +71,7 @@ const AumTimer = () => {
         <span>{hours}h</span>
         <span>{minutes}m</span>
         <span>{seconds}s</span>
+        <span>{millisecondsRemainder}ms</span>
       </div>
     );
   };
@@ -65,7 +79,7 @@ const AumTimer = () => {
   return (
     <div className="bg-white p-8 rounded-lg shadow-lg text-center text-[#0c3c4c]"> 
       <div className="text-3xl flex justify-center">{formatTime(remainingTime)}</div>
-      <div className="mt-2">
+      <div className="mt-6">
         <p>USD: ${aum.toFixed(2)}</p>
         <p>BTC: {btcValue.toFixed(2)} BTC</p>
         <p>ETH: {ethValue.toFixed(2)} ETH</p>
