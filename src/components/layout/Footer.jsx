@@ -18,15 +18,15 @@ const Footer = () => {
   return (
     <div>
       {/* Desktop */}
-      <div className="bg-[#0c3c4c] px-24 py-8 mt-16 text-[#999999] hidden sm:hidden lg:block xl:block">
+      <div className="bg-[#0c3c4c] px-24 py-8 mt-16 text-gray-300 hidden sm:hidden lg:block xl:block">
         <div className="mx-auto flex flex-col gap-4 pt-12 ">
           <div className="border-b-2 border-gray-300 pb-4 mb-4">
             <div className="grid grid-cols-2 gap-16 items-center mb-6 ">
               <div>
                 <h1 className="text-5xl font-bold capitalize title mb-4 ">
-                  BlockPeg
+                  Asset Under Management
                 </h1>
-                <span className="text-lg text-[#999999] body">
+                <span className="text-lg text-gray-300 body">
                 <AumTimer />
                 </span>
               </div>
@@ -35,10 +35,10 @@ const Footer = () => {
                   <h5 className="font-semibold text-2xl mb-4 capitalize heading">
                     Quick Links
                   </h5>
-                  <div className="mb-2 text-[#999999] hover:text-lg">
+                  <div className="mb-2 text-gray-300 hover:text-lg">
                   <Link to="/blogx">Blog</Link>
                   </div>
-                  <div className="mb-2 text-[#999999] hover:text-lg">
+                  <div className="mb-2 text-gray-300 hover:text-lg">
                   <Link to="/contact">Contact</Link>
                   </div>
                   {/* <div className="mb-2 text-[#999999] hover:text-lg">
@@ -49,15 +49,15 @@ const Footer = () => {
                   <h5 className="font-semibold text-2xl heading mb-4 capitalize">
                     Get in touch
                   </h5>
-                  <p className="mb-4 text-[#999999]">
+                  <p className="mb-4 text-gray-300">
                     <FaMapMarkerAlt className="inline mr-2" />
                     78/79 Pappelallee, 10437, Berlin, Germany
                   </p>
-                  <p className="mb-4 text-[#999999]">
+                  <p className="mb-4 text-gray-300">
                     <FaPhone className="inline mr-2" />
                     +351912392362
                   </p>
-                  <p className="mb-4 text-[#999999]">
+                  <p className="mb-4 text-gray-300">
                     <FaEnvelope className="inline mr-2" />
                     admin@blockpeg.capital
                   </p>
@@ -70,20 +70,20 @@ const Footer = () => {
             <a href="#" className=" text-xl title">
               BlockPeg,
             </a>
-            <span className="text-[#999999]"> All Right Reserved.</span>
+            <span className="text-gray-300"> All Right Reserved.</span>
           </div>
         </div>
       </div>
       {/* Mobile */}
-      <div className="bg-[#0c3c4c] px-8 pb-7 mt-8 text-[#999999] sm:block lg:hidden xl:hidden">
+      <div className="bg-[#0c3c4c] px-8 pb-7 mt-8 text-gray-300 sm:block lg:hidden xl:hidden">
         <div className="mx-auto flex flex-col gap-1 pt-12  ">
           <div className="border-b-2 border-gray-300 pb-4 mb-4">
             <div className="grid grid-cols-1 gap-8 items-center mb-6 ">
               <div>
                 <h1 className="text-3xl font-bold capitalize title ">
-                  BlockPeg
+                  Asset Under Management
                 </h1>
-                <span className="text-lg text-[#999999] body">
+                <span className="text-lg text-gray-300 body">
                 <AumTimer />
                 </span>
               </div>
@@ -92,10 +92,10 @@ const Footer = () => {
                   <h5 className="font-semibold text-xl mb-2 capitalize heading">
                     Quick Links
                   </h5>
-                  <div className="mb-2 text-[#999999] hover:text-lg">
+                  <div className="mb-2 text-gray-300 hover:text-lg">
                   <Link to="/blogx">Blog</Link>
                   </div>
-                  <div className="mb-2 text-[#999999] hover:text-lg">
+                  <div className="mb-2 text-gray-300 hover:text-lg">
                   <Link to="/contact">Contact</Link>
                   </div>
                   {/* <div className="mb-2 text-[#999999] hover:text-lg">
@@ -106,15 +106,15 @@ const Footer = () => {
                   <h5 className="font-semibold text-xl heading mb-2 capitalize">
                     Get in touch
                   </h5>
-                  <p className="mb-4 text-[#999999]">
+                  <p className="mb-4 text-gray-300">
                     <FaMapMarkerAlt className="inline mr-2" />
                     78/79 Pappelallee, 10437, Berlin, Germany
                   </p>
-                  <p className="mb-4 text-[#999999]">
+                  <p className="mb-4 text-gray-300">
                     <FaPhone className="inline mr-2" />
                     +351912392362
                   </p>
-                  <p className="mb-4 text-[#999999]">
+                  <p className="mb-4 text-gray-300">
                     <FaEnvelope className="inline mr-2" />
                     admin@blockpeg.capital
                   </p>
@@ -127,7 +127,7 @@ const Footer = () => {
             <a href="#" className=" text-xl title">
               BlockPeg,
             </a>
-            <span className="text-[#999999]"> All Right Reserved.</span>
+            <span className="text-gray-300"> All Right Reserved.</span>
           </div>
         </div>
       </div>

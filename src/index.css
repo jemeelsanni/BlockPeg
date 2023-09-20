@@ -18,3 +18,21 @@ body {
 .body {
   font-family: "Catamaran", sans-serif;
 }
+
+.currency-display {
+  font-size: 24px;
+  margin: 10px;
+  animation: countUpAnimation 2s ease-out;
+}
+
+@keyframes countUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
