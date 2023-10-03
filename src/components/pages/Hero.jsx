@@ -22,10 +22,10 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           variants={fadeInFromLeft} // Use the fade-in animation variants
-          className="flex h-[80vh] items-center bg-[#F2F8FE] px-8 shadow-xl"
+          className="flex flex-col items-center bg-[#F2F8FE] px-8 "
           id="home"
         >
-          <div className="w-full px-16 text-center">
+          <div className="w-full h-[80vh] py-48 px-16 text-center shadow-xl">
             <motion.h1
               variants={fadeInFromLeft} // Use the fade-in animation variants
               className="text-7xl font-bold capitalize title text-[#0c3c4c]"
@@ -50,6 +50,85 @@ const Hero = () => {
               </Link>
             </motion.div>
           </div>
+          {/* <div className="p-16">
+            <div className="text-4xl mb-2 heading text-center">
+              Invest in a fund that aligns with your financial goals
+            </div>
+            <div className="text-xl font-light text-center title mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div className=" flex flex-row gap-6">
+              <div>
+                <h1 className="text-xl mb-2 uppercase font-bold heading text-center">
+                  Blockpeg Funds
+                </h1>
+                <div >
+                  <li className="mb-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </li>
+                  <li className=" mb-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </li>
+                  <li className="mb-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </li>
+                </div>
+              </div>
+              <div>
+                <h1 className="text-xl mb-2 uppercase font-bold heading text-center">
+                  Blockpeg Funds
+                </h1>
+                <div >
+                  <li className="mb-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </li>
+                  <li className=" mb-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </li>
+                  <li className="mb-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </li>
+                </div>
+              </div>
+              <div>
+                <h1 className="text-xl mb-2 uppercase font-bold heading text-center">
+                  Blockpeg Funds
+                </h1>
+                <div >
+                  <li className="mb-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </li>
+                  <li className=" mb-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </li>
+                  <li className="mb-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </li>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div> */}
         </motion.div>
       </div>
       {/* mobile */}

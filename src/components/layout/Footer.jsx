@@ -80,7 +80,7 @@ const Footer = () => {
           <div className="border-b-2 border-gray-300 pb-4 mb-4">
             <div className="grid grid-cols-1 gap-8 items-center mb-6 ">
               <div>
-                <h1 className="text-3xl font-bold capitalize title ">
+                <h1 className="text-2xl font-bold capitalize title ">
                   Asset Under Management
                 </h1>
                 <span className="text-lg text-gray-300 body">
@@ -89,7 +89,7 @@ const Footer = () => {
               </div>
               <div className="flex justify-around">
                 <div className="capitalize body">
-                  <h5 className="font-semibold text-xl mb-2 capitalize heading">
+                  <h5 className="font-semibold text-md mb-2 capitalize heading">
                     Quick Links
                   </h5>
                   <div className="mb-2 text-gray-300 hover:text-lg">
@@ -103,7 +103,7 @@ const Footer = () => {
                   </div> */}
                 </div>
                 <div className="body">
-                  <h5 className="font-semibold text-xl heading mb-2 capitalize">
+                  <h5 className="font-semibold text-md heading mb-2 capitalize">
                     Get in touch
                   </h5>
                   <p className="mb-4 text-gray-300">

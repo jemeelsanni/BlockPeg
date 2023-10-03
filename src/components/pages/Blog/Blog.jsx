@@ -226,7 +226,7 @@ const Blog = () => {
                   <input
                     className="bg-[#f2f8fe] body w-full p-2 placeholder-neutral-400 focus:outline-none"
                     type="text"
-                    placeholder="jemeelsanni@gmail.com"
+                    placeholder="admin@blockpeg.capital"
                   />
                   <button className="absolute top-0 end-0 py-2 px-4 fill-[#0c3c4c]">
                     <IoIosArrowForward size={24} />

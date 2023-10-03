@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const AumTimer = () => {
-  const initialAUM = 20000000; // Initial AUM in USD
+  const initialAUM = 20005628; // Initial AUM in USD
   const incrementAmount = 125000; // Amount to increment every 3 days in USD
   const daysInterval = 3; // Interval for increment in days
   const conversionUpdateInterval = 48 * 60 * 60 * 1000; // 48 hours in milliseconds
@@ -78,8 +78,7 @@ const AumTimer = () => {
 
   return (
     <div className="bg-white p-8 rounded-lg shadow-lg text-center text-[#0c3c4c]"> 
-      <div className="text-3xl flex justify-center">{formatTime(remainingTime)}</div>
-      <div className="mt-6">
+      <div>
         <p>USD: ${aum.toFixed(2)}</p>
         <p>BTC: {btcValue.toFixed(2)} BTC</p>
         <p>ETH: {ethValue.toFixed(2)} ETH</p>
