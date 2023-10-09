@@ -19,10 +19,38 @@ body {
   font-family: "Catamaran", sans-serif;
 }
 
+.literata {
+  font-family: 'Literata', serif;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
 .currency-display {
   font-size: 24px;
   margin: 10px;
   animation: countUpAnimation 2s ease-out;
+}
+
+.backgroundimage-home{
+  background-image: url('/src/components/blockpeg capital/assets/Heroo.png');
+  background-size: cover;
+}
+
+.backgroundimage-strategic{
+  background-image: url('/src/components/blockpeg capital/assets/StrategicHero.png');
+  background-size: cover;
+}
+
+.backgroundimage-financial{
+  background-image: url('/src/components/blockpeg capital/assets/FinancialHero.png');
+  background-size: cover;
+  width: 100%;
 }
 
 @keyframes countUpAnimation {

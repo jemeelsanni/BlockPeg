@@ -13,7 +13,6 @@ import Logo from "../assets/blockpeg.png";
 import { Link } from "react-router-dom";
 import AumTimer from "../timer/AumTimer";
 
-
 const Footer = () => {
   return (
     <div>
@@ -23,11 +22,18 @@ const Footer = () => {
           <div className="border-b-2 border-gray-300 pb-4 mb-4">
             <div className="grid grid-cols-2 gap-16 items-center mb-6 ">
               <div>
-                <h1 className="text-5xl font-bold capitalize title mb-4 ">
-                  Asset Under Management
-                </h1>
+                <div className="flex gap-3 items-center">
+                  <img src={Logo} alt="" />
+                  <h1 className="text-5xl mt-6 font-bold capitalize title mb-4 ">
+                    BlockPeg Capital
+                  </h1>
+                </div>
+                <br />
                 <span className="text-lg text-gray-300 body">
-                <AumTimer />
+                  {/* <AumTimer /> */}
+                  Investing in cryptocurrency can be a complex business. By placing
+              your investment with an expert partner, you can easily diversify
+              your portfolio and benefit from optimal returns.
                 </span>
               </div>
               <div className="flex gap-16">
@@ -36,10 +42,10 @@ const Footer = () => {
                     Quick Links
                   </h5>
                   <div className="mb-2 text-gray-300 hover:text-lg">
-                  <Link to="/blogx">Blog</Link>
+                    <Link to="/blogx">Blog</Link>
                   </div>
                   <div className="mb-2 text-gray-300 hover:text-lg">
-                  <Link to="/contact">Contact</Link>
+                    <Link to="/contact">Contact</Link>
                   </div>
                   {/* <div className="mb-2 text-[#999999] hover:text-lg">
                   <Link to="/about">Team</Link>
@@ -84,7 +90,7 @@ const Footer = () => {
                   Asset Under Management
                 </h1>
                 <span className="text-lg text-gray-300 body">
-                <AumTimer />
+                  <AumTimer />
                 </span>
               </div>
               <div className="flex justify-around">
@@ -93,10 +99,10 @@ const Footer = () => {
                     Quick Links
                   </h5>
                   <div className="mb-2 text-gray-300 hover:text-lg">
-                  <Link to="/blogx">Blog</Link>
+                    <Link to="/blogx">Blog</Link>
                   </div>
                   <div className="mb-2 text-gray-300 hover:text-lg">
-                  <Link to="/contact">Contact</Link>
+                    <Link to="/contact">Contact</Link>
                   </div>
                   {/* <div className="mb-2 text-[#999999] hover:text-lg">
                   <Link to="/about">Team</Link>
