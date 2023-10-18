@@ -1,8 +1,8 @@
-import React from 'react'
-import phone from '../../assets/phone.png'
-import twitter from '../../assets/TwitterAb.png'
-import linkedin from '../../assets/LinkedinAb.png'
-import instagram from '../../assets/InstagramAb.png'
+import React from 'react';
+import phone from '../../assets/phone.png';
+import twitter from '../../assets/TwitterAb.png';
+import linkedin from '../../assets/LinkedinAb.png';
+import instagram from '../../assets/InstagramAb.png';
 
 const Contact = () => {
   return (
