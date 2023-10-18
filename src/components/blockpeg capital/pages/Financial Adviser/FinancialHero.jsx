@@ -5,10 +5,13 @@ const FinancialHero = () => {
     <div>
       <div>
         <div>
-          <div className="backgroundimage-financial pb-[68px] pt-[88px] pl-[64px] text-[#FFFFFF]">
+          <div className="backgroundimage-financial pb-[68px] pt-[88px] pl-[64px] text-[#FFFFFF] flex flex-col gap-3 ">
             <h1 className="literata text-5xl font-bold">
-              Get in Touch with Expert <br />
-              <br /> Financial Adviser.
+              Get in Touch with Expert 
+            </h1>
+            <h1 className="literata text-5xl font-bold">
+              
+               Financial Adviser.
             </h1>
             <p className=" pt-12 lato text-lg font-normal">
               Whether you have specific investment queries or general <br /> questions

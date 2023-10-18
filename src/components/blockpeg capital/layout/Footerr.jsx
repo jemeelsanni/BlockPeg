@@ -22,33 +22,32 @@ const Footerr = () => {
             <div className='flex gap-4 lato text-lg font-normal items-center mt-36 '>
                 <img src={Copyright} alt="" />
                 <div className=''>
-                    <p>Copyright 2022</p>
-                    
+                    <p>Copyright 2023</p>
                 </div>
             </div>
             </div>
-            <div className='flex flex-col gap-16 justify-between lato text-lg font-normal'>
+            <div className='flex flex-col gap-8 justify-between lato text-lg font-normal'>
                 <div className='text-[#0B245B]'>.</div>
                 <div>Home</div>
                 <div>About Us</div>
                 <div>Building Blocks</div>
             </div>
             
-            <div className='flex flex-col gap-16 justify-between lato text-lg font-normal'>
+            <div className='flex flex-col gap-8 justify-between lato text-lg font-normal'>
                 <div className='text-[#0B245B]'>.</div>
                 <div>Products</div>
                 <div>Strategic Insights</div>
                 <div>Financial Adviser</div>
             </div>
 
-            <div className='flex flex-col gap-16 justify-between lato text-lg font-normal'>
+            <div className='flex flex-col gap-8 justify-between lato text-lg font-normal'>
                 <div className='text-[#0B245B]'>.</div>
                 <div>Our Team</div>
                 <div>Contacts</div>
                 <div>FAQs</div>
             </div>
 
-            <div className='flex flex-col gap-16 justify-between lato text-lg font-normal'>
+            <div className='flex flex-col gap-8 justify-between lato text-lg font-normal'>
                 <div className='flex flex-row gap-12'>
                     <div><img src={Linkedin} alt="" /></div>
                     <div><img src={Instagram} alt="" /></div>

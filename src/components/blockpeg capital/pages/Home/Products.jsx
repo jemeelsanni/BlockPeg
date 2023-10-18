@@ -3,7 +3,7 @@ import React from "react";
 const Products = () => {
   return (
     <div>
-      <div className=" flex justify-between items-center gap-12 flex-row mx-16 my-36">
+      <div className=" flex justify-between items-center gap-12 flex-row mx-16 my-16">
         <div className="text-[#0B245B]">
           <h1 className=" mb-12 literata text-5xl font-bold">Products</h1>
           <p className="lato text-lg font-normal">

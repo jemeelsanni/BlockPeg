@@ -1,15 +1,15 @@
 import React, { forwardRef } from "react";
-import { StrategicData } from "../../Data/StrategicData";
+import { BlockData } from "../../Data/StrategicData";
 
-function StrategicGrid(props, ref) {
+function BlockGrid(props, ref) {
   return (
-    <div ref={ref} className="my-16">
+    <div ref={ref} className="mt-16 mb-24">
       <div className="mx-16">
-        <div className="text-[#0B245B] literata text-5xl font-bold">
+        {/* <div className="text-[#0B245B] literata text-5xl font-bold">
           Strategic Insight
-        </div>
+        </div> */}
         <div className="mt-12 grid grid-cols-3 justify-around gap-20 items-center">
-          {StrategicData.map((insight, index) => {
+          {BlockData.map((insight, index) => {
             return (
               <div className="w-[381px]" key={index}>
                 <div>
@@ -40,4 +40,4 @@ function StrategicGrid(props, ref) {
   );
 }
 
-export default forwardRef(StrategicGrid);
+export default forwardRef(BlockGrid);

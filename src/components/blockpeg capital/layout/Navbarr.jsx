@@ -4,7 +4,7 @@ import Logo from "../assets/Logo.png";
 const Navbarr = () => {
   return (
     <div>
-        <div className=' bg-[#0B245B] flex justify-between px-16 pt-10 pb-6 items-center'>
+        <div className=' bg-[#0B245B] flex justify-between px-16 py-4 items-center'>
             <div className='flex gap-4 text-[#FFFFFF] literata text-2xl font-semibold'>
                 <img src={Logo} alt="" />
                 <div>

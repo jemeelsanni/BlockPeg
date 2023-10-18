@@ -53,6 +53,27 @@ body {
   width: 100%;
 }
 
+.backgroundimage-About{
+  background-image: url('/src/components/blockpeg capital/assets/AboutHero.png');
+  background-size: cover;
+  width: 100%;
+}
+
+.backgroundimage-building{
+  background-image: url('/src/components/blockpeg capital/assets/buildingblock.png');
+  background-size: cover;
+  width: 100%;
+}
+
+
+
+.eclipse{
+  background-image: url('/src/components/blockpeg capital/assets/Ellipse.png');
+  background-size: cover;
+  width: 100%;
+}
+
+
 @keyframes countUpAnimation {
   0% {
     opacity: 0;

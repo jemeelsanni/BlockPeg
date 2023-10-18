@@ -6,7 +6,7 @@ import Building from '../../assets/Building.png';
 const Resource = () => {
   return (
     <div>
-        <div className='my-36 mx-16'>
+        <div className='my-16 mx-16'>
             <div className='text-[#0B245B] text-center literata text-5xl font-bold mb-16'>Resources</div>
             <div className='flex flex-row gap-24 justify-center'>
                 <div>

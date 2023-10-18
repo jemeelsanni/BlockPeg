@@ -8,7 +8,7 @@ import Ease from "../../assets/Ease.png";
 
 const Benefits = () => {
   return (
-    <div className=" mt-36 mx-16">
+    <div className=" mt-16 mx-16">
       <div>
         <div className="literata text-center text-[#0B245B] text-5xl font-bold mb-10">
           Benefits of Our Approach

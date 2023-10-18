@@ -85,17 +85,24 @@ const Footer = () => {
         <div className="mx-auto flex flex-col gap-1 pt-12  ">
           <div className="border-b-2 border-gray-300 pb-4 mb-4">
             <div className="grid grid-cols-1 gap-8 items-center mb-6 ">
-              <div>
-                <h1 className="text-2xl font-bold capitalize title ">
-                  Asset Under Management
-                </h1>
+            <div>
+                <div className="flex gap-3 items-center">
+                  <img src={Logo} alt="" />
+                  <h1 className="text-4xl mt-6 font-bold capitalize title mb-4 ">
+                    BlockPeg Capital
+                  </h1>
+                </div>
+                <br />
                 <span className="text-lg text-gray-300 body">
-                  <AumTimer />
+                  {/* <AumTimer /> */}
+                  Investing in cryptocurrency can be a complex business. By placing
+              your investment with an expert partner, you can easily diversify
+              your portfolio and benefit from optimal returns.
                 </span>
               </div>
-              <div className="flex justify-around">
-                <div className="capitalize body">
-                  <h5 className="font-semibold text-md mb-2 capitalize heading">
+              <div className="flex w-full justify-between text-center">
+                <div className="capitalize w-1/2 body">
+                  <h5 className="font-semibold  text-md mb-2 capitalize heading">
                     Quick Links
                   </h5>
                   <div className="mb-2 text-gray-300 hover:text-lg">

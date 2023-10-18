@@ -5,10 +5,13 @@ const StrategicHero = () => {
   return (
     <div>
       <div className="">
-        <div className="backgroundimage-strategic pb-[88px] pt-[120px] pl-[64px] text-[#FFFFFF]">
+        <div className="backgroundimage-strategic pb-[88px] pt-[120px] pl-[64px] text-[#FFFFFF] flex flex-col gap-3">
           <h1 className="literata text-5xl font-bold">
-            Manage Bitcoin’s Volatility <br />
-            <br /> with Momentum Signals
+            Manage Bitcoin’s Volatility 
+          </h1>
+          <h1 className="literata text-5xl font-bold">
+            
+            with Momentum Signals
           </h1>
           <p className="pt-12 lato text-lg font-normal">
             Certain investors may be optimistic about <br /> Bitcoin’s longer-term
