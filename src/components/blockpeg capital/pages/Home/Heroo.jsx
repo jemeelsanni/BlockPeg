@@ -8,7 +8,7 @@ const Heroo = () => {
         
         <div>
           
-          <div className="backgroundimage-home pb-28 pt-[120px] pl-[64px] text-[#FFFFFF] flex flex-col gap-3">
+          <div className="backgroundimage-home pb-28 pt-[120px] pl-[64px] text-[#0B245B] flex flex-col gap-3">
             <h1 className="literata text-5xl font-bold">
               Digital-age asset manager 
             </h1>

@@ -1,5 +1,6 @@
 {
   "name": "block-peg",
+  "homepage": "https://blockpeg.capital/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,6 +15,7 @@
     "@headlessui/react": "^1.7.17",
     "@material-tailwind/react": "^2.1.1",
     "date-fns": "^2.30.0",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^10.16.4",
     "mui-tel-input": "^4.0.0",
     "numeral": "^2.0.6",

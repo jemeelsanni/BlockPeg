@@ -64,6 +64,11 @@ body {
   background-size: cover;
   width: 100%;
 }
+.backgroundimage-decentraland{
+  background-image: url('/src/components/blockpeg capital/assets/DecentralandHero.png');
+  background-size: cover;
+  width: 100%;
+}
 
 
 

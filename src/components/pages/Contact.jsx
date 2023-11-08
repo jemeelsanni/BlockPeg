@@ -17,7 +17,7 @@ import Button from "@mui/material/Button";
 import { motion } from "framer-motion"; // Import motion from framer-motion
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef(null);
 
   const [choice, setChoice] = useState("");
   const [yesOptions, setYesOptions] = useState(Array(6).fill(false));
@@ -52,17 +52,17 @@ const Contact = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        "service_lw0920c", // Your emailjs service ID
-        "template_wds5rdb", // Your emailjs template ID
+        "service_tnm1eqe", // Replace with your EmailJS service ID
+        "template_8xjjmoo", // Replace with your EmailJS template ID
         {
           user_name: e.target.user_name.value,
           email: e.target.email.value,
           phone_number: phone_number,
           choice: choice,
           selectedDropdownValue: selectedDropdownValue,
-          // Include other form fields here
+          
         },
-        "XUMoM5FgMGTUctBMI" // Your emailjs user ID
+        "IijIZNKTANLgiOO4o" // Replace with your EmailJS user ID
       )
       .then(
         (result) => {
@@ -79,7 +79,7 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    emailjs.init("XUMoM5FgMGTUctBMI");
+    emailjs.init("IijIZNKTANLgiOO4o"); // Replace with your EmailJS user ID
   }, []);
 
   const fadeInFromTop = {
@@ -176,7 +176,9 @@ const Contact = () => {
 
               {choice === "Yes" && (
                 <FormGroup>
-                  <h2>Why are you looking for a different investment method?</h2>
+                  <h2>
+                    Why are you looking for a different investment method?
+                  </h2>
                   <FormControlLabel
                     control={
                       <Checkbox

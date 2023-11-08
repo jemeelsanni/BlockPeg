@@ -6,6 +6,7 @@ import Homepage from "./components/blockpeg capital/pages/Home/Homepage";
 import StrategicInsight from "./components/blockpeg capital/pages/Strategic Insight/StrategicInsight";
 import FinancialAdviser from "./components/blockpeg capital/pages/Financial Adviser/FinancialAdviser";
 import BuildingBlocks from "./components/blockpeg capital/pages/Building Blocks/BuildingBlocks";
+import Decentraland from "./components/blockpeg capital/pages/Blog/Decentraaland/Decentraland";
 import Contact from "./components/pages/Contact";
 import AboutUs from "./components/blockpeg capital/pages/About Us/AboutUs";
 import { ToastContainer } from "react-toastify";
@@ -34,6 +35,7 @@ function App() {
           <Route path="blogx" element={<Blogx />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="decentraland" element={<Decentraland/>}/>
           <Route path="strategicinsight" element={<StrategicInsight/>}/>
           <Route path="financialadviser" element={<FinancialAdviser/>}/>
           <Route path="buildingblocks" element={<BuildingBlocks/>}/>

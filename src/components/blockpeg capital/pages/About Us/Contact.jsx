@@ -1,5 +1,7 @@
 import React from 'react';
 import phone from '../../assets/phone.png';
+import email from '../../assets/Email.png';
+import map from '../../assets/Map.png';
 import twitter from '../../assets/TwitterAb.png';
 import linkedin from '../../assets/Linkedinab.png';
 import instagram from '../../assets/InstagramAb.png';
@@ -34,7 +36,7 @@ const Contact = () => {
                     <div className='mb-[38px]'>
                         <div className='lato text-[32px] font-semibold flex items-center gap-9 '>
                             <div>Emails</div>
-                            <img className='w-[40px] h-[40px]' src={phone} alt="" />
+                            <img className='w-[40px] h-[40px]' src={email} alt="" />
                         </div>
                         <div className='text-[#0B245B] lato text-lg font-normal mt-[23px] flex flex-col gap-[40px]'>
                             <p>Info@bkockpegcapital.co</p>
@@ -48,7 +50,7 @@ const Contact = () => {
                     <div className='mb-[38px]'>
                         <div className='lato text-[32px] font-semibold flex items-center gap-9 '>
                             <div>Location</div>
-                            <img className='w-[40px] h-[40px]' src={phone} alt="" />
+                            <img className='w-[40px] h-[40px]' src={map} alt="" />
                         </div>
                         <div className='text-[#0B245B] lato text-lg font-normal mt-[23px] flex flex-col gap-[40px]'>
                             <p>Lagos, Nigeria</p>
@@ -64,4 +66,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
