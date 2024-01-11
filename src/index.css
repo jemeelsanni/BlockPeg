@@ -20,15 +20,15 @@ body {
 }
 
 .literata {
-  font-family: 'Literata', serif;
+  font-family: "Literata", serif;
 }
 
 .inter {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .lato {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .currency-display {
@@ -37,45 +37,222 @@ body {
   animation: countUpAnimation 2s ease-out;
 }
 
-.backgroundimage-home{
-  background-image: url('/src/components/blockpeg capital/assets/Heroo.png');
+.backgroundimage-home {
+  background-image: url("/src/components/blockpeg capital/assets/Heroo.png");
   background-size: cover;
+  flex-shrink: 0;
+  width:full
 }
 
-.backgroundimage-strategic{
-  background-image: url('/src/components/blockpeg capital/assets/StrategicHero.png');
+.backgroundimage-home-mobile {
+  background-image: url("/src/components/blockpeg capital/assets/hom2.png");
   background-size: cover;
+  flex-shrink: 0;
+  width:full;
+  height: fit-content;
 }
 
-.backgroundimage-financial{
-  background-image: url('/src/components/blockpeg capital/assets/FinancialHero.png');
+.backgroundimage-strategic {
+  background-image: url("/src/components/blockpeg capital/assets/StrategicHero.png");
+  background-size: cover;
+}
+.backgroundimage-strat-mobile {
+  background-image: url("/src/components/blockpeg capital/assets/strat.png");
+  background-size: cover;
+  flex-shrink: 0;
+  width:full;
+  height: fit-content;
+}
+
+.backgroundimage-financial {
+  background-image: url("/src/components/blockpeg capital/assets/FinancialHero.png");
   background-size: cover;
   width: 100%;
 }
 
-.backgroundimage-About{
-  background-image: url('/src/components/blockpeg capital/assets/AboutHero.png');
+.backgroundimage-financial-mobile {
+  background-image: url("/src/components/blockpeg capital/assets/FinancialHero-mobile.png");
+  background-size: cover;
+  flex-shrink: 0;
+  width:full;
+  height: fit-content;
+}
+
+.backgroundimage-About {
+  background-image: url("/src/components/blockpeg capital/assets/AboutHero.png");
   background-size: cover;
   width: 100%;
 }
 
-.backgroundimage-building{
-  background-image: url('/src/components/blockpeg capital/assets/buildingblock.png');
+.backgroundimage-About-mobile {
+  background-image: url("/src/components/blockpeg capital/assets/AboutHero-mobile.png");
+  background-size: cover;
+  flex-shrink: 0;
+  width:full;
+  height: fit-content;
+}
+
+.backgroundimage-building {
+  background-image: url("/src/components/blockpeg capital/assets/buildingblock.png");
   background-size: cover;
   width: 100%;
 }
-.backgroundimage-decentraland{
-  background-image: url('/src/components/blockpeg capital/assets/DecentralandHero.png');
+
+.backgroundimage-building-mobile {
+  background-image: url("/src/components/blockpeg capital/assets/buildingblock-mobile.png");
+  background-size: cover;
+  flex-shrink: 0;
+  width:full;
+  height: fit-content;
+}
+
+.backgroundimage-decentraland {
+  background-image: url("/src/components/blockpeg capital/assets/DecentralandHero.png");
+  background-size: cover;
+  width: 100%;
+}
+.backgroundimage-cardano {
+  background-image: url("/src/components/blockpeg capital/assets/cardanohero.png");
   background-size: cover;
   width: 100%;
 }
 
-
-
-.eclipse{
-  background-image: url('/src/components/blockpeg capital/assets/Ellipse.png');
+.eclipse {
+  background-image: url("/src/components/blockpeg capital/assets/Ellipse.png");
   background-size: cover;
   width: 100%;
+}
+
+.eclipse-mobile {
+  background-image: url("/src/components/blockpeg capital/assets/Ellipse-mobile.png");
+  background-size: cover;
+  flex-shrink: 0;
+  width:full;
+  height: fit-content;
+}
+
+.navbar {
+  background-color: #0b245b;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 6px;
+  color: #565656;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 15px;
+  border: 1px solid #aaa;
+  text-align: center;
+  background: #fff;
+  height: auto;
+  width: 148px;
+  padding: 18px 12px 24px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none;
+}
+
+.menu-item:hover .dropdown {
+  display: flex;
+
+}
+
+.dropdown.visible {
+  display: block;
+}
+
+.menu-item button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Your CSS file or style section in your React component */
+@media screen and (max-width: 1024px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: -18px;
+  margin-top: 30px;
+  color: #565656;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 15px;
+  border: 1px solid #aaa;
+  text-align: center;
+  background: #fff;
+  height: auto;
+  width: 148px;
+  padding: 18px 12px 24px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none;
+}
+
+@media screen and (min-width: 1025px) {
+  .hide-on-laptop {
+    display: none;
+  }
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 6px;
+    color: #565656;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 15px;
+    border: 1px solid #aaa;
+    text-align: center;
+    background: #fff;
+    height: auto;
+    width: 148px;
+    padding: 18px 12px 24px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: none;
+  }
 }
 
 
@@ -88,5 +265,43 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+.text-5xl{
+  line-height: 190.023%;
+}
+.text-3xl{
+  line-height: 170.023%;
+}
+.text-base{
+  line-height: 170.023%;
+}
+
+.text-lg{
+  line-height: 170.023%;
+}
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.swiper-container {
+  list-style: none;
+}
+
+.pagination {
+  bottom: 0;
+  padding-bottom: 4px;
+}
+
+.slide {
+  text-align: center;
+  height: 320px;
+  line-height: 320px;
+  background: #364d79;
+  overflow: hidden;
 }
 

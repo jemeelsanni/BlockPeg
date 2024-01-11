@@ -4,12 +4,39 @@ import { Link } from "react-router-dom";
 import { IoMdClose, IoIosArrowForward } from "react-icons/io";
 import { FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import emailjs from "emailjs-com";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [email, setEmail] = useState("");
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Use your EmailJS service ID, template ID, and user ID
+    const serviceId = "service_tnm1eqe";
+    const templateId = "template_c057cbj";
+    const userId = "IijIZNKTANLgiOO4o";
+
+    // Send the email using EmailJS
+    emailjs
+      .send(serviceId, templateId, { to_email: email }, userId)
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+        // Handle success, e.g., show a success message to the user
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        // Handle error, e.g., show an error message to the user
+      });
+
+    // Clear the input field after submission
+    setEmail("");
+  };
+
   return (
     <div>
       <div className="hidden sm:hidden lg:block xl:block">
@@ -151,16 +178,21 @@ const Navbar = () => {
                     directly to your inbox.
                   </p>
                 </div>
+                <form onSubmit={handleSubmit}>
                 <div className="mt-4">
                   <input
-                    className=" bg-[#f2f8fe] body w-full p-2 placeholder-neutral-400 focus:outline-none"
-                    type="text"
-                    placeholder="admin@blockpeg.capital"
+                    className=" bg-[#f2f8fe] text-black body w-full p-2 placeholder-neutral-400 focus:outline-none"
+                    type="email"
+                      placeholder="admin@blockpeg.capital"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
                   />
-                  <button className="absolute top-116 end-4 py-2 px-4 text-[#0c3c4c]   ">
+                  <button type="submit" className="absolute top-116 end-4 py-2 px-4 text-[#0c3c4c]   ">
                     <IoIosArrowForward size={24} />
                   </button>
                 </div>
+                </form>
               </div>
             </div>
           </div>

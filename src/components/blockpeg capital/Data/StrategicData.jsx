@@ -68,7 +68,7 @@ export const BlockData = [
     title: "Cardano",
     intro:
       "Cardano is a next-generation internet platform (Web 3.0) structured as a publicly traded blockchain-based crypto network...",
-    link: "Learn more",
+    link: "/cardano",
   },
   {
     id: "",
@@ -76,7 +76,7 @@ export const BlockData = [
     title: "Decentraland",
     intro:
       "Decentraland is a blockchain-based virtual world that allows users to build their own tools, games, content, and markets, among other things...",
-    link: "Learn more",
+    link: "/decentraland",
   },
   {
     id: "",
@@ -84,7 +84,7 @@ export const BlockData = [
     title: "Ethereum",
     intro:
       "Ethereum is a global, open-source blockchain platform for decentralized applications (DApps), powered by smart contracts and .....",
-    link: "Learn more",
+    link: "/ethereum",
   },
   {
     id: "",
@@ -92,7 +92,7 @@ export const BlockData = [
     title: "Solana",
     intro:
       "Solana is a next-generation smart contract platform that provides ultra-fast transaction speeds and low-cost transactions on a......",
-    link: "Learn more",
+    link: "/solana",
   },
   {
     id: "",
@@ -100,7 +100,7 @@ export const BlockData = [
     title: "Litecoin",
     intro:
       "Litecoin is a decentralized, peer-to-peer (P2P) digital currency and payment network supported by an open-source blockchain protocol...",
-    link: "Learn more",
+    link: "/litecoin",
   },
   {
     id: "",
@@ -108,6 +108,6 @@ export const BlockData = [
     title: "Bitcoin",
     intro:
       "Bitcoin is the first and arguably most successful decentralized digital currency in the world. Users can send or receive payments in.....",
-    link: "Learn more",
+    link: "/bitcoin",
   },
 ];

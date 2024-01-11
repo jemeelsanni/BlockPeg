@@ -8,106 +8,105 @@ import Ease from "../../assets/Ease.png";
 
 const Benefits = () => {
   return (
-    <div className=" mt-16 mx-16">
+    <div className=" mt-16 mx-6 laptop:mx-16">
       <div>
-        <div className="literata text-center text-[#0B245B] text-5xl font-bold mb-10">
+        <div className="literata text-left laptop:text-center text-[#0B245B] text-[32px] laptop:text-5xl font-bold mb-10">
           Benefits of Our Approach
         </div>
-        <div className="grid grid-cols-3 justify-center gap-16">
-          <div className="flex flex-col items-center">
+        <div className="grid grid-cols-2 laptop:grid-cols-3 justify-center gap-16">
+          <div className="flex flex-col  items-left laptop:items-center">
             <div>
-              <div className="border-4 border-[#0B245B] mb-4 rounded-3xl w-[200px] ">
-                <img className=" p-[50px]" src={Trust} alt="" />
+              <div className="w-[100px] laptop:w-[200px] h-[100px] laptop:h-[200px]">
+                <img className="w-full h-full" src={Trust} alt="" />
               </div>
-              <h1 className=" text-[#0B245B] lato text-center text-[32px] font-bold">
+              <h1 className=" text-[#0B245B] lato text-left laptop:text-center text-2xl my-[16px] laptop:text-[32px] font-bold">
                 Trust
               </h1>
             </div>
             <div>
-              <p className="text-[#0B245B] text-center lato text-lg font-normal">
+              <p className="text-[#0B245B] text-left laptop:text-center lato text-base laptop:text-lg font-normal">
                 BlockPeg Capital, a trusted partner for investors in digital
                 currencies, institutional and individual alike.
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col  items-left laptop:items-center">
             <div>
-              <div className="border-4 border-[#0B245B] mb-4 rounded-3xl w-[200px] ">
-                <img className=" p-[50px]" src={Secured} alt="" />
+              <div className="w-[100px] laptop:w-[200px] h-[100px] laptop:h-[200px]">
+                <img className="w-full h-full" src={Trust} alt="" />
               </div>
-              <h1 className=" text-[#0B245B] lato text-center text-[32px] font-bold">
-                Secured
+              <h1 className=" text-[#0B245B] lato text-left laptop:text-center text-2xl my-[16px]  laptop:text-[32px] font-bold">
+                Trust
               </h1>
             </div>
             <div>
-              <p className="text-[#0B245B] text-center lato text-lg font-normal">
-                Our products operates as a distinct legal entity with support
-                from institutional-grade partners, including custodians and
-                auditors.
+              <p className="text-[#0B245B] text-left laptop:text-center lato text-base laptop:text-lg font-normal">
+                BlockPeg Capital, a trusted partner for investors in digital
+                currencies, institutional and individual alike.
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col  items-left laptop:items-center">
             <div>
-              <div className="border-4 border-[#0B245B] mb-4 rounded-3xl w-[200px] ">
-                <img className=" p-[50px]" src={Scaled} alt="" />
+              <div className="w-[100px] laptop:w-[200px] h-[100px] laptop:h-[200px]">
+                <img className="w-full h-full" src={Trust} alt="" />
               </div>
-              <h1 className=" text-[#0B245B] lato text-center text-[32px] font-bold">
-                Scaled
+              <h1 className=" text-[#0B245B] lato text-left laptop:text-center text-2xl my-[16px] laptop:text-[32px] font-bold">
+                Trust
               </h1>
             </div>
             <div>
-              <p className="text-[#0B245B] text-center lato text-lg font-normal">
-                BlockPeg Capital products excel in industry-leading
-                availability, scale, investment opportunities, and liquidity.
+              <p className="text-[#0B245B] text-left laptop:text-center lato text-base laptop:text-lg font-normal">
+                BlockPeg Capital, a trusted partner for investors in digital
+                currencies, institutional and individual alike.
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col  items-left laptop:items-center">
             <div>
-              <div className="border-4 border-[#0B245B] mb-4 rounded-3xl w-[200px] ">
-                <img className=" p-[50px]" src={Expert} alt="" />
+              <div className="w-[100px] laptop:w-[200px] h-[100px] laptop:h-[200px]">
+                <img className="w-full h-full" src={Trust} alt="" />
               </div>
-              <h1 className=" text-[#0B245B] lato text-center text-[32px] font-bold">
-                Expert
+              <h1 className=" text-[#0B245B] lato text-left laptop:text-center text-2xl my-[16px] laptop:text-[32px] font-bold">
+                Trust
               </h1>
             </div>
             <div>
-              <p className="text-[#0B245B] text-center lato text-lg font-normal">
-                BlockPeg Capital, a digital-native company, possesses early
-                insight into high-potential innovations in the digital economy.
+              <p className="text-[#0B245B] text-left laptop:text-center lato text-base laptop:text-lg font-normal">
+                BlockPeg Capital, a trusted partner for investors in digital
+                currencies, institutional and individual alike.
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col  items-left laptop:items-center">
             <div>
-              <div className="border-4 border-[#0B245B] mb-4 rounded-3xl w-[200px] ">
-                <img className=" p-[50px]" src={Regulated} alt="" />
+              <div className="w-[100px] laptop:w-[200px] h-[100px] laptop:h-[200px]">
+                <img className="w-full h-full" src={Trust} alt="" />
               </div>
-              <h1 className=" text-[#0B245B] lato text-center text-[32px] font-bold">
-                Regulated
+              <h1 className=" text-[#0B245B] lato text-left laptop:text-center text-2xl my-[16px] laptop:text-2xl laptop:text-[32px] font-bold">
+                Trust
               </h1>
             </div>
             <div>
-              <p className="text-[#0B245B] text-center lato text-lg font-normal">
-                BlockPeg Capital's products comply with all regulations and set
-                industry standards as the first SEC reporting funds.
+              <p className="text-[#0B245B] text-left laptop:text-center lato text-base laptop:text-lg font-normal">
+                BlockPeg Capital, a trusted partner for investors in digital
+                currencies, institutional and individual alike.
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col  items-left laptop:items-center">
             <div>
-              <div className="border-4 border-[#0B245B] mb-4 rounded-3xl w-[200px] ">
-                <img className=" p-[50px]" src={Ease} alt="" />
+              <div className="w-[100px] laptop:w-[200px] h-[100px] laptop:h-[200px]">
+                <img className="w-full h-full" src={Trust} alt="" />
               </div>
-              <h1 className=" text-[#0B245B] lato text-center text-[32px] font-bold">
-                Ease
+              <h1 className=" text-[#0B245B] lato text-left laptop:text-center text-2xl my-[16px] laptop:text-[32px] font-bold">
+                Trust
               </h1>
             </div>
             <div>
-              <p className="text-[#0B245B] text-center lato text-lg font-normal">
-                You can easily buy BlockPeg Capital products in their IRA or
-                investment accounts through brokerage platforms.
+              <p className="text-[#0B245B] text-left laptop:text-center lato text-base laptop:text-lg font-normal">
+                BlockPeg Capital, a trusted partner for investors in digital
+                currencies, institutional and individual alike.
               </p>
             </div>
           </div>

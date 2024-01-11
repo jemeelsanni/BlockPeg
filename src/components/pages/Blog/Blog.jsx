@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
+import emailjs from "emailjs-com";
 
 const Blog = () => {
   const fadeInFromLeft = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0, transition: { duration: 1.5 } },
+  };
+
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Use your EmailJS service ID, template ID, and user ID
+    const serviceId = "service_tnm1eqe";
+    const templateId = "template_c057cbj";
+    const userId = "IijIZNKTANLgiOO4o";
+
+    // Send the email using EmailJS
+    emailjs
+      .send(serviceId, templateId, { to_email: email }, userId)
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+        // Handle success, e.g., show a success message to the user
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        // Handle error, e.g., show an error message to the user
+      });
+
+    // Clear the input field after submission
+    setEmail("");
   };
 
   return (
@@ -97,16 +124,24 @@ const Blog = () => {
                     directly to your inbox.
                   </p>
                 </div>
-                <div className="relative">
-                  <input
-                    className="bg-[#f2f8fe] body w-full p-2 placeholder-neutral-400 focus:outline-none"
-                    type="text"
-                    placeholder="admin@blockpeg.capital"
-                  />
-                  <button className="absolute top-0 end-0 py-2 px-4 fill-[#0c3c4c]">
-                    <IoIosArrowForward size={24} />
-                  </button>
-                </div>
+                <form onSubmit={handleSubmit}>
+                  <div className="relative">
+                    <input
+                      className="bg-[#f2f8fe] body w-full p-2 placeholder-neutral-400 focus:outline-none"
+                      type="email"
+                      placeholder="admin@blockpeg.capital"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                    />
+                    <button
+                      type="submit"
+                      className="absolute top-0 end-0 py-2 px-4 fill-[#0c3c4c]"
+                    >
+                      <IoIosArrowForward size={24} />
+                    </button>
+                  </div>
+                </form>
               </div>
               <div className="bg-slate-200 px-8 py-10">
                 <div className="mb-2">
@@ -222,16 +257,21 @@ const Blog = () => {
                     directly to your inbox.
                   </p>
                 </div>
-                <div className="relative">
-                  <input
-                    className="bg-[#f2f8fe] body w-full p-2 placeholder-neutral-400 focus:outline-none"
-                    type="text"
-                    placeholder="admin@blockpeg.capital"
-                  />
-                  <button className="absolute top-0 end-0 py-2 px-4 fill-[#0c3c4c]">
-                    <IoIosArrowForward size={24} />
-                  </button>
-                </div>
+                <form onSubmit={handleSubmit}>
+                  <div className="relative">
+                    <input
+                      className="bg-[#f2f8fe] body w-full p-2 placeholder-neutral-400 focus:outline-none"
+                      type="email"
+                      placeholder="admin@blockpeg.capital"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                    />
+                    <button type="submit" className="absolute top-0 end-0 py-2 px-4 fill-[#0c3c4c]">
+                      <IoIosArrowForward size={24} />
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </motion.div>
