@@ -7,7 +7,7 @@ const DecentralandHero = () => {
     <div>
       <div>
         <div>
-          <div className="backgroundimage-decentraland pb-[68px] pt-[32px] pl-[64px] text-[#FFFFFF] flex flex-col gap-3 ">
+          <div className="backgroundimage-decentraland-mobile laptop:backgroundimage-decentraland pb-[68px] pt-[32px] pl-[64px] text-[#FFFFFF] flex flex-col gap-3 ">
             <Link to="/buildingblocks">
               <img src={Back} className=" h-[50px] w-[50px] mb-[58px]" alt="" />
             </Link>

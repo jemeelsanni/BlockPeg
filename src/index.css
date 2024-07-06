@@ -111,6 +111,15 @@ body {
   background-size: cover;
   width: 100%;
 }
+
+.backgroundimage-decentraland-mobile {
+  background-image: url("/src/components/blockpeg capital/assets/DecentralandHero-mobile.png");
+  background-size: cover;
+  flex-shrink: 0;
+  width:full;
+  height: fit-content;
+}
+
 .backgroundimage-cardano {
   background-image: url("/src/components/blockpeg capital/assets/cardanohero.png");
   background-size: cover;

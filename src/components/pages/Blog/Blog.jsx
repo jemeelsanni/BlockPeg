@@ -39,7 +39,7 @@ const Blog = () => {
   return (
     <div>
       {/* Desktop */}
-      <div className="hidden sm:hidden lg:block xl:block">
+      <div className="hidden laptop:block">
         <section className="mx-24 mt-16">
           <motion.div
             initial="hidden"
@@ -171,7 +171,7 @@ const Blog = () => {
         </section>
       </div>
       {/* Mobile */}
-      <div className="sm:block lg:hidden xl:hidden">
+      <div className="block laptop:hidden">
         <section className="mx-4 mt-8">
           <motion.div
             initial="hidden"

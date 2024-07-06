@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <div className="">
       {/* desktop */}
-      <div className="hidden sm:hidden lg:block xl:block">
+      <div className="hidden laptop:block">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -132,7 +132,7 @@ const Hero = () => {
         </motion.div>
       </div>
       {/* mobile */}
-      <div className="sm:block lg:hidden xl:hidden">
+      <div className="block laptop:hidden">
         <motion.div
           initial="hidden"
           animate="visible"

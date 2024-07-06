@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="hidden sm:hidden lg:block xl:block">
+      <div className="hidden laptop:block">
         <div className="flex justify-between mx-24 my-5 items-center bg-slate-200 head  px-10 rounded-full">
           <div>
             <Link to="/">
@@ -62,7 +62,7 @@ const Navbar = () => {
                 <Link to="/blogx">Blog</Link>
               </li>
               <li className="hover:text-[#0c3c4c] hover:border-b-2 hover:border-[#0c3c4c]">
-                <Link to="/contact">Contact</Link>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmqMD_-IkgaOAQ3Jy4PvxD-wIV46jCnQ-1IQqbMwp0v5is9A/viewform?usp=sf_link">Contact</a>
               </li>
             </ul>
           </div>
@@ -130,7 +130,7 @@ const Navbar = () => {
                 <Link to="/blogx">Blog</Link>
               </li>
               <li className="text-slate-200 mb-4">
-                <Link to="/contact">Contact</Link>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmqMD_-IkgaOAQ3Jy4PvxD-wIV46jCnQ-1IQqbMwp0v5is9A/viewform?usp=sf_link">Contact</a>
               </li>
             </ul>
             <div className="flex gap-6 px-6 mx-2 my-2 cursor-pointer mt-8 ">
@@ -198,7 +198,7 @@ const Navbar = () => {
           </div>
         </>
       )}
-      <div className="sm:block lg:hidden xl:hidden ">
+      <div className=" block laptop:hidden ">
         <div className="flex justify-between mx-4 my-5 items-center bg-slate-200 head  p-2 rounded-full">
           <div>
             <Link to="/">
