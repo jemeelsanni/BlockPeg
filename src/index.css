@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   background: #f2f8fe;
 }
@@ -41,14 +42,14 @@ body {
   background-image: url("/src/components/blockpeg capital/assets/Heroo.png");
   background-size: cover;
   flex-shrink: 0;
-  width:full
+  width: full;
 }
 
 .backgroundimage-home-mobile {
   background-image: url("/src/components/blockpeg capital/assets/hom2.png");
   background-size: cover;
   flex-shrink: 0;
-  width:full;
+  width: full;
   height: fit-content;
 }
 
@@ -60,7 +61,7 @@ body {
   background-image: url("/src/components/blockpeg capital/assets/strat.png");
   background-size: cover;
   flex-shrink: 0;
-  width:full;
+  width: full;
   height: fit-content;
 }
 
@@ -74,7 +75,7 @@ body {
   background-image: url("/src/components/blockpeg capital/assets/FinancialHero-mobile.png");
   background-size: cover;
   flex-shrink: 0;
-  width:full;
+  width: full;
   height: fit-content;
 }
 
@@ -88,7 +89,7 @@ body {
   background-image: url("/src/components/blockpeg capital/assets/AboutHero-mobile.png");
   background-size: cover;
   flex-shrink: 0;
-  width:full;
+  width: full;
   height: fit-content;
 }
 
@@ -102,7 +103,7 @@ body {
   background-image: url("/src/components/blockpeg capital/assets/buildingblock-mobile.png");
   background-size: cover;
   flex-shrink: 0;
-  width:full;
+  width: full;
   height: fit-content;
 }
 
@@ -116,7 +117,7 @@ body {
   background-image: url("/src/components/blockpeg capital/assets/DecentralandHero-mobile.png");
   background-size: cover;
   flex-shrink: 0;
-  width:full;
+  width: full;
   height: fit-content;
 }
 
@@ -136,7 +137,7 @@ body {
   background-image: url("/src/components/blockpeg capital/assets/Ellipse-mobile.png");
   background-size: cover;
   flex-shrink: 0;
-  width:full;
+  width: full;
   height: fit-content;
 }
 
@@ -187,7 +188,6 @@ body {
 
 .menu-item:hover .dropdown {
   display: flex;
-
 }
 
 .dropdown.visible {
@@ -264,7 +264,6 @@ body {
   }
 }
 
-
 @keyframes countUpAnimation {
   0% {
     opacity: 0;
@@ -276,21 +275,19 @@ body {
   }
 }
 
-
-.text-5xl{
+.text-5xl {
   line-height: 190.023%;
 }
-.text-3xl{
+.text-3xl {
   line-height: 170.023%;
 }
-.text-base{
-  line-height: 170.023%;
-}
-
-.text-lg{
+.text-base {
   line-height: 170.023%;
 }
 
+.text-lg {
+  line-height: 170.023%;
+}
 
 .App {
   font-family: sans-serif;
@@ -313,4 +310,3 @@ body {
   background: #364d79;
   overflow: hidden;
 }
-

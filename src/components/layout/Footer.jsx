@@ -1,17 +1,5 @@
-import React from "react";
-import {
-  FaMapMarkerAlt,
-  FaPhone,
-  FaEnvelope,
-  FaLink,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-  FaTwitter,
-} from "react-icons/fa";
 import Logo from "../assets/blockpeg.png";
 import { Link } from "react-router-dom";
-import AumTimer from "../timer/AumTimer";
 
 const Footer = () => {
   return (
@@ -51,20 +39,20 @@ const Footer = () => {
                   <Link to="/about">Team</Link>
                   </div> */}
                 </div>
-                <div className="body">
+                {/* <div className="body">
                   <h5 className="font-semibold text-2xl heading mb-4 capitalize">
                     Get in touch
                   </h5>
                   <p className="mb-4 text-gray-300">
                     <FaMapMarkerAlt className="inline mr-2" />
-                    78/79 Pappelallee, 10437, Berlin, Germany
+                    78/79 Pappelallee, 10437, Berlin,Germany
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
           <div className=" text-center text-lg font-semibold heading">
-            &copy;{" "}
+            &copy; <span className="mx-2">2024,</span>
             <a href="#" className=" text-xl title">
               BlockPeg,
             </a>
@@ -107,7 +95,7 @@ const Footer = () => {
                   <Link to="/about">Team</Link>
                   </div> */}
                 </div>
-                <div className="body">
+                {/* <div className="body">
                   <h5 className="font-semibold text-md heading mb-2 capitalize">
                     Get in touch
                   </h5>
@@ -116,12 +104,12 @@ const Footer = () => {
                     <FaEnvelope className="inline mr-2" />
                     admin@blockpeg.capital
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
           <div className=" text-center text-lg font-semibold heading">
-            &copy;{" "}
+            &copy; <span className="mx-2">2024,</span>
             <a href="#" className=" text-xl title">
               BlockPeg,
             </a>

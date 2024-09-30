@@ -1,8 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"; // Import motion from framer-motion
-import Herimg from "../assets/hero-1.png";
-
 const Hero = () => {
   const fadeInFromLeft = {
     hidden: { opacity: 0, x: -100 },
